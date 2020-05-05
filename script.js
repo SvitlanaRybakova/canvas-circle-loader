@@ -4,7 +4,7 @@ var ctx = canvas.getContext('2d');
 var pi = Math.PI;//число пи в градусах, а удобнее в %, для этого коэфициент к 
 var k = 2*pi / 100; //  потом буду умножать на интересующий процент 
 var x = 0;// start value
-var max = 85;
+var max = 100;
 var timeout;// для сохранения таймера
 
 draw();
@@ -25,10 +25,10 @@ function draw(){
 
     // рисую цифры
     ctx.beginPath();
-    ctx.font = 'bold 70px Arial';
+    ctx.font = 'bold 60px Arial';
     ctx.fillStyle = color;
     ctx.textAligh = 'center';
-    ctx.fillText(x+'%', 60, 145);// 60 и 145 сдвиг по оси х и у
+    ctx.fillText(x+'%', 50, 145);// 60 и 145 сдвиг по оси х и у
     ctx.closePath();
     
     //timeout = setTimeout(draw, 100);
